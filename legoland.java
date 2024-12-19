@@ -20,6 +20,10 @@ public class legoland {
             
             System.out.print("Type:");
             int type = sc.nextInt();
+            if(type>3){
+                System.out.println("Invalid ticket type");
+                return;
+            }
             System.out.print("Age of visitor " + i + ":");
             int age = sc.nextInt();
             
@@ -49,8 +53,6 @@ public class legoland {
                 } else if (age < 3 || age > 60) {
                     price = 0;
                 }
-            } else{
-                System.out.println("Invalid ticket type");
             }
             
            
